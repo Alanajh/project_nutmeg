@@ -1,0 +1,208 @@
+{"tests":[
+	{
+		"language": "US-EN",
+		"grade": "5th (Fifth)",
+		"subject": "History",
+		"genre": "Roman Empire",
+		"module" : "people",
+		"items":  [
+			{"question" : "Who was the first emperor of Rome?"},
+			{"question" : "Who was the last emperor of Rome?"},
+			{"question" : "What was Augustus Caesars' name before his rule of the Roman Empire?" },
+			{"question" : "Augustus Caeser, Tiberius, Caligula, Claudius and Nero are the first five rulers of Rome and the ________ Dynasty " },
+			{"question" : "Which two of emperors of the first five emperors of Rome were assasinated while in office? " },
+			{"question" : "Which of the first five emperors of Rome committed suicide and emded the Julio-Claudian Dynasty?" },
+			{"question" : "Who founded the Flavian Dynasty which was characterized by massive building projects, economic prosperity, expansion of the empire and in that time initiated the building of the Flavian Amphitheatre (the famous Coliseum of Rome)?" },
+			{"question" : "Who was the last pagan emperor of Rome?" },
+			{"question" : "Who's famous academy was closed when the empire converted pagan temples into Christian churches and closed the schools and universities that were adverse to Christian philosophy during the reign of Theodosius?" },
+			{"question" : "" }
+			]
+		},
+		{
+		"lang": "US-EN",
+		"grade": "5th (Fifth)",
+		"subject": "History",
+		"genre": "Roman Empire",
+		"module" : "people",
+		"items": [
+			{"answer" : "Augustus Caesar"},
+			{"answer" : "Romulus Augustulus"},
+			{"answer" : "Julius Caesar"},
+			{"answer" : "Julio-Claudian"},
+			{"answer" : "Caligula and Claudius"},
+			{"answer" : "Nero"},
+			{"answer" : "Vespasian"},
+			{"answer" : "Julian the Apostate or Julian"},
+			{"answer" : "Plato"},
+			{"answer" : "..."}
+			]
+		},
+		{
+		"lang": "US-EN",
+		"grade": "5th (Fifth)",
+		"subject": "History",
+		"genre": "Roman Empire",
+		"module" : "places",
+		"items": [
+			{"question" : "What country is Rome located in?"},
+			{"question" : "During the Reign of Titus(ruled 79-81 CE) which Mount erupted and buried the cities of Pompeii and Herculaneum?"},
+			{"question" : "After the Diocletian established the Tetrarchy, he created the Western Roman Empire and the Eastern Roman Empire, which was also known as" },
+			{"question" : "Which modern day city did Constantine found as New Rome (It's old or new name)?"}
+			]
+		},
+		{
+		"lang": "US-EN",
+		"grade": "5th (Fifth)",
+		"subject": "History",
+		"genre": "Roman Empire",
+		"module" : "places",
+		"items": [
+			{"answer" : "Italy"},
+			{"answer" : "Vesuvius"},
+			{"answer" : "The Byzantine Empire"},
+			{"answer" : "Istanbul or Constantinople"}
+			]
+		},
+		{
+		"lang": "US-EN",
+		"grade": "5th (Fifth)",
+		"subject": "History",
+		"genre": "Roman Empire",
+		"module" : "things",
+		"items": [
+			{"question" : "Quote by Augustus Caeser - I found Rome a city of clay but left it a city of ______." },
+			{"question" : "Diocletian (ruled 284-305 CE) and established the Tetrarchy (the rule of four) to maintain order throughout the empire. This means he _____ ______"},
+			{"question" : "Which Roman emperor initiated the Edict of Milan (317 CE), which mandated religious tolerance throughout the empire and, specifically, tolerance for the faith which came to known as Christianity?"}
+			]
+		},
+		{
+		"lang": "US-EN",
+		"grade": "5th (Fifth)",
+		"subject": "History",
+		"genre": "Roman Empire",
+		"module" : "things",
+		"items": [
+			{"answer" : "marble"},
+			{"answer" : "Divided the empire ( in half )"},
+			{"answer" : "Constantine"}
+			]
+		},
+		{
+		"lang": "US-EN",
+		"grade": "5th (Fifth)",
+		"subject": "History",
+		"genre": "Greek Mythology",
+		"module" : "people",
+		"items": [
+			{"question" : "The oldest know Greek literary sources was Homer's epic poems, The ______ and The ______ " },
+			{"question" : "Heracles was the son of which god?"},
+			{"question" : "hich Greek god was the god of the grape harvest and winemaking?"},
+			{"question" : "Who was the god of the ocean or sea?"},
+			{"question" : "Perseus beheaded which Gorgon?"}
+			]
+		},
+		{
+		"lang": "US-EN",
+		"grade": "5th (Fifth)",
+		"subject": "History",
+		"genre": "Greek Mythology",
+		"module" : "people",
+		"items": [
+			{"answer" : "Iliad and Odyssey"},
+			{"answer" : "Zeus"},
+			{"answer" : "Dionysus"},
+			{"answer" : "Poseidon"},
+			{"answer" : "Medusa"}
+			]
+		},
+		{
+		"lang": "US-EN",
+		"grade": "5th (Fifth)",
+		"subject": "History",
+		"genre": "Greek Mythology",
+		"module" : "places",
+		"items": [
+			{"question" : "TWhere did the tweleve major dieties reside?"},
+			{"question" : "Atlas was condemned to hold up what?"}
+			]
+		},
+		{
+		"lang": "US-EN",
+		"grade": "5th (Fifth)",
+		"subject": "History",
+		"genre": "Greek Mythology",
+		"module" : "places",
+		"items": [
+			{"answer" : "Mount Olympus"},
+			{"answer" : "The Sky"}
+			]
+		},
+		{
+		"lang": "US-EN",
+		"grade": "5th (Fifth)",
+		"subject": "History",
+		"genre": "Greek Mythology",
+		"module" : "things",
+		"items": [
+			{"question" : "TWhere did the tweleve major dieties reside?"},
+			{"question" : "Atlas was condemned to hold up what?"}
+			]
+		},
+		{
+		"lang": "US-EN",
+		"grade": "5th (Fifth)",
+		"subject": "History",
+		"genre": "Greek Mythology",
+		"module" : "things",
+		"items": [
+			{"answer" : "Mount Olympus"},
+			{"answer" : "The Sky"}
+			]
+		},
+		{
+		"lang": "US-EN",
+		"grade": "5th (Fifth)",
+		"subject": "History",
+		"genre": "African-American History - Art",
+		"module" : "people",
+		"items": [
+			{"question" : "This artist was of Haitian and Puerto Rican descent", "detail" : "https://en.wikipedia.org/wiki/Jean-Michel_Basquiat", 
+				"art" : [
+				{"url" : "https://whitebabybuffalo.files.wordpress.com/2011/03/basquiat1.jpg"},
+				{"url" : "https://upload.wikimedia.org/wikipedia/en/e/e1/Untitled_acrylic_and_mixed_media_on_canvas_by_--Jean-Michel_Basquiat--,_1984.jpg"},
+				{"url" : "https://uploads6.wikiart.org/images/jean-michel-basquiat/notary.jpg"}
+				]
+			},
+			{"question" : ""},
+			{"question" : ""},
+			{"question" : "The first African-American animator, writer and comic bok artist to work for Walt Disney Animation Studios was?", "url" : "https://en.wikipedia.org/wiki/Floyd_Norman"},
+			{"question" : ""},
+			{"question" : ""},
+			{"question" : ""},
+			{"question" : ""},
+			{"question" : ""},
+			{"question" : ""}
+			]
+		},
+		{
+		"lang": "US-EN",
+		"grade": "5th (Fifth)",
+		"subject": "History",
+		"genre": "African-American History - Art",
+		"module" : "people",
+		"items": [
+			{"answer" : "Jean-Michel Basquiat"},
+			{"answer" : "Romare Bearden"},
+			{"answer" : "Jerry Pinkney"},
+			{"answer" : "Floyd Norman"},
+			{"answer" : "Romare Bearden"},
+			{"answer" : "Romare Bearden"},
+			{"answer" : "Romare Bearden"},
+			{"answer" : "Romare Bearden"},
+			{"answer" : "Romare Bearden"},
+			{"answer" : "Romare Bearden"}
+			]
+		}
+	]
+}
+		

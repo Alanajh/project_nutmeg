@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/nutmeg.css" />
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="main.json"></script>
+<title>Nutmeg</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3 col-ld-3 col-lg-3" id="advertising">Lorem
+				ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+				ea commodo consequat.</div>
+			<div class="col-sm-6 col-md-6 col-lg-6" id="question">Question</div>
+			<div class="col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
+				ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+				ea commodo consequat.</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
+				ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+				ea commodo consequat.</div>
+			<div class="col-sm-6 col-md-6 col-lg-6" id="answer">Answer</div>
+			<div class="col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
+				ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+				ea commodo consequat.</div>
+		</div>
+		<div class="row">
+			<div class="btn-group">
+				<div class="col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
+					ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat.</div>
+				<div class="col-sm-6 col-md-6 col-lg-6" id="btn">
+					<button id="enter" type="button" class="btn btn-primary">enter</button>
+				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
+					ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut minim
+					veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+					ex ea commodo consequat.</div>
+			</div>
+		</div>
+	</div>
+
+<img src= "http://3.bp.blogspot.com/-m0O_a08zEiQ/T1P5lVodfNI/AAAAAAAAAmM/jCQl_V4Ws6w/s1600/soccer-1.jpg" height="100" width="150" id="pic">
+	<script type="text/javascript">
+	// Evens are questions odds are answers. First set of questions starts at 0
+		var answer;
+		var data;	
+		var url = "main.json";
+		
+		$(document).ready(function(){
+			$.ajax({
+				url: url,
+				datatype: "json",
+				success: function(data) {
+				
+				$.each(data.tests[13].items, function(i, ob){
+					/*
+					if(!jQuery.isArray(data)) data = [data];
+					answer +=  ob.answer + "<br/>";
+					document.getElementById("answer").innerHTML = answer;
+					*/
+					answer += ob.answer + "<br/>";
+					for(var i = 1; i < 5; i++){
+						
+						document.getElementById("answer").innerHTML = answer;
+					}
+				});
+				document.getElementById("enter").onclick = forward;
+				}
+			});
+		});
+		
+		function forward(){
+			var c = document.getElementById("pic");
+			c.getAttributeNode("src").value = "https://uploads6.wikiart.org/images/jean-michel-basquiat/notary.jpg";
+		}
+		
+		function getNext(){
+			
+		}
+		
+		/* button fade in */
+		//$("#enter").click(funtion(){
+			//alert("go");
+		//});
+				//var output = "<ul>";
+				// var question="<p>" + data.tests[0].items[6].question + "</p>";
+				//var answer="<p>" + data.tests[1].items[6].answer + "</p>";
+				//output += "<li>" + data.tests[0].subject + " - "
+				//		+ data.tests[0].genre + " "
+				//		+ data.tests[0].items[8].question + " "
+				//		+ data.tests[1].items[8].answer + "</li>";
+				//   output+="<li>" + data.tests[0].items.questionB + " " + data.tests[1].items.answerB + "</li>";
+				//   output+="<li>" + data.tests[0].items.questionC + " " + data.tests[1].items.answerC + "</li>";
+
+				//output += "</ul>";
+
+				// for ( var i = 0; i < 10 i++){
+				//var output += "<p>" + data.tests[0].items.question[0] + "</p>";	
+				// }
+				//document.getElementById("answer").innerHTML = output;
+				//document.getElementById("question").innerHTML = question;
+				
+		//	});
+		//}
+		
+	</script>
+</body>
+</html>
+
+<!-- ACTIVE URL: http://192.168.1.205:8080/Inline_Nutmeg/index.html -->
