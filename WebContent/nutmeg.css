@@ -4,6 +4,7 @@
 }
 
 body, html { 
+	background-color: rgb(210, 238, 247);
     position: relative;
     height: 100%;
     width: 100%; /*fallback*/
@@ -17,7 +18,7 @@ body, html {
     height: 50%;
     padding: 0;
     margin: 0;
-    background-color: rgb(200, 45, 12);
+    background-color: rgb(0, 0, 128);
     position: absolute;
     top: 0px;
     -webkit-animation-name: top; /* Safari 4.0 - 8.0 */
@@ -33,7 +34,7 @@ body, html {
     top: 50%;
     padding: 0;
     margin: 0;
-    background-color: rgb(200, 45, 12);
+    background-color: rgb(0, 0, 128);
     position: absolute;
     -webkit-animation-name: bottom; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
@@ -66,10 +67,19 @@ div .btn{
 }
 
 #menuBtns{
-    border: solid 2px black;
     width: 90%;
     margin: auto;
-    
+}
+#menuBtns .btn{
+	padding: 30px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
 }
 .modal-header{
 	background-color: green;
