@@ -8,17 +8,15 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/nutmeg.css">
-   <style>
 
-</style>
 </head>
 <body>
 
 <div class="container-fluid">
   
   <!-- SPLASHSCREEN -->
-  <div class="row" id="top"></div>
-  <div class="row" id="bottom"></div>
+  <div id="top" class="row"></div>
+  <div id="bottom" class="row"></div>
 
 <!-- LOGIN SCREEN -->
     <form>
@@ -29,7 +27,8 @@
            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#studentModal" id="student">Student</a>
            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#teacherModal" id="teacher">Teacher</a>
            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#adminModal" id="admin">Administrator</a>
-           <a href="#" class="btn btn-success" id="guest">Guest</a>
+           <a href="#" id="guest" class="btn btn-success">Guest</a>
+     
         </div>
     </div>
    </form>
@@ -44,19 +43,20 @@
                <button type="button" class="close" data-dismiss="modal">&times;</button>
                <h4 class="modal=-title"><span class="glyphicon glyphicon-lock"></span>Student login</h4>
            <div class="imgcontainer">
-           <img src="src/img_avatar_female.png" alt="Avatar" class="avatar">
+           <img src="src/users/student_girl_1.PNG" alt="Avatar" class="avatar">
            </div>
            </div>
+           
            <div class="modal-body">
                <div class="container">
-               <form id='login' action='php/login.php' method='post' accept-charset='UTF-8'>
+               <form id='login' action='login.php' method='POST' accept-charset='UTF-8'>
               <label><b>Username</b></label>
               <input type="text" placeholder="Enter Username" name="user" required>
         		<br>
               <label><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
+              <input type="password" placeholder="Enter Password" name="pswd" required>
                 <br>
-              <button type="submit" name="Submit">Login</button>
+              <button id="enter" type="submit" name="Submit">Login</button>
               <br>
               <input type="checkbox" checked="checked"> Remember me
               </form>
