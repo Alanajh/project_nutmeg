@@ -25,6 +25,7 @@ try{
 	$password = $_POST ['pswd'];
 	$
 	
+	/* THIS IS THE SQL */
     $sql = "SELECT * FROM nutmegpswddb WHERE user = '$user' and password = '$password'";   
     $result = $DBH->query($sql);
     if($result->rowCount() > 0){
