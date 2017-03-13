@@ -1,0 +1,21 @@
+body{
+	background-color: rgb(252, 141, 141)
+}
+
+#error{
+	background-color: rgb(255, 204, 204);
+	border: solid red 5px;
+	color: red;
+	margin-top: 20%;
+}
+
+div #errorMsg{
+	border: solid white 2px;
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
+}
+
+div #errorImg{
+	width: 50%;
+}
