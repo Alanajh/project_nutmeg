@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="javascript/settings.js"></script>
 	<link rel="stylesheet" href="css/themes/main/nutmeg.css">
 
 </head>
@@ -28,7 +29,7 @@
            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#teacherModal" id="teacher">Teacher</a>
            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#adminModal" id="admin">Administrator</a>
            <a href="#" id="guest" class="btn btn-success">Guest</a>
-           <img src="css/themes/main/settings_8.png" style="width:100px; float:right;" id="setting"/>
+           <img src="css/themes/main/settings_8.png" style="width:100px; float:right;" id="setting" onclick="set();"/>
         </div>
     </div>
    </form>
