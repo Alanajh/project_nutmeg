@@ -3,3 +3,7 @@ $(document).ready(function(){
     	window.open("settings.php", "_self");
     });	
 });
+
+function swap(sheet){
+	document.getElementById('pageStyle').setAttribute('href', sheet);
+}
