@@ -12,9 +12,9 @@
 <body>
 	<div class="container-fluid">
 		<div id="error">
-			<div id="errorLayaer2">
+			<div id="errorLayer2">
 				<h1 id="errorMsg">Login error</h1>
-				<h4 id="errorMsg">There is a problem with your user name or password. Please try again.</h>
+				<h4 id="errorMsg">There is a problem with your username or password. Please try again.</h>
 				<br>
 				<img src="src/errors/close.png" id="errorImg" />
 			</div>

@@ -23,9 +23,7 @@ catch(PDOException $e) {
 try{
 	$user = $_POST['user'];
 	$password = $_POST ['pswd'];
-	$
 	
-	/* THIS IS THE SQL */
     $sql = "SELECT * FROM nutmegpswddb WHERE user = '$user' and password = '$password'";   
     $result = $DBH->query($sql);
     if($result->rowCount() > 0){
@@ -45,7 +43,7 @@ try{
         unset($result);
     } else{
     	require 'errors.php';
-       // echo "The user name and/or password was incorrect";
+       // echo "The username and/or password was incorrect";
     }
 } catch(PDOException $error){
     die("ERROR: Could not able to execute $sql. " . $error->getMessage());
