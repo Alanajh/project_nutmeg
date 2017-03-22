@@ -4,7 +4,7 @@
 }
 
 body, html { 
-	background-color: brown;
+	background-color: rgb(254, 220, 210);
     position: relative;
     height: 100%;
     width: 100%; /*fallback*/
@@ -18,7 +18,7 @@ body, html {
     height: 50%;
     padding: 0;
     margin: 0;
-    background-color: grey;
+    background-color: rgb(143, 216, 210);
     position: absolute;
     top: 0px;
     -webkit-animation-name: top; /* Safari 4.0 - 8.0 */
@@ -34,7 +34,7 @@ body, html {
     top: 50%;
     padding: 0;
     margin: 0;
-    background-color: grey;
+    background-color: rgb(143, 216, 210);
     position: absolute;
     -webkit-animation-name: bottom; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
@@ -62,6 +62,8 @@ body, html {
 }
 
 div .btn{
+	background-color: rgb(220, 178. 57);
+	color: rgb(56, 56, 56);
     margin-bottom: 20px;
     width: 100%;
 }
@@ -75,8 +77,9 @@ div .btn{
 	padding: 30px;
 }
 
-div #setting{
-	border: solid red 2px;
+div #setting:hover{
+	opacity: 0.5;
+	filter: alpha(opacity=50);
 }
 
 /* Modal Content/Box */

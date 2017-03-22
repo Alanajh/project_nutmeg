@@ -6,7 +6,8 @@
 <body>
 
 <?php
-//Database Credentials
+session_start();
+
 $host = 'localhost';
 $database = 'nutmeg';
 $username = 'root';
@@ -27,20 +28,7 @@ try{
     $sql = "SELECT * FROM nutmegpswddb WHERE user = '$user' and password = '$password'";   
     $result = $DBH->query($sql);
     if($result->rowCount() > 0){
-        echo "<table>";
-            echo "<tr>";
-                echo "<th><b>TYPE</b></th>";
-                echo "<th><b>ID</b></th>";
-            echo "</tr>";
-        while($row = $result->fetch()){
-            echo "<tr>";
-                echo "<td>" . $row['user'] . "</td>";
-                echo "<td>" . $row['id'] . "</td>";
-            echo "</tr>";
-        }
-        echo "</table>";
-        // Free result set
-        unset($result);
+    	require 'menu.php';
     } else{
     	require 'errors.php';
        // echo "The username and/or password was incorrect";
