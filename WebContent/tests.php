@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <script src="javascript/settings.js"></script>
+   <script type="text/javascript" src="javascript/settings.js"></script>
    <script type="text/javascript" src="main.json"></script>
 	<link id="pageStyle" rel="stylesheet" href="css/themes/main/nutmeg.css">
 </head>
@@ -19,13 +19,13 @@
 		<br>
 		<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-3 col-ld-3 col-lg-3" id="advertising">Lorem
+			<div class="col-sm-2 col-ld-2 col-lg-2" id="advertising">Lorem
 				ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
 				ea commodo consequat.</div>
-			<div class="col-sm-6 col-md-6 col-lg-6" id="question">Question</div>
-			<div class="col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
+			<div class="col-sm-8 col-md-8 col-lg-8" id="question">Question</div>
+			<div class="col-sm-2 col-md-2 col-lg-2" id="advertising">Lorem
 				ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex

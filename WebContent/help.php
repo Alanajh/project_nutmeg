@@ -9,6 +9,7 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script src="javascript/settings.js"></script>
     <link id="pageStyle" rel="stylesheet" href="css/themes/help.css">
+   
 </head>
 <body>
 <div class="container-fluid">
@@ -23,8 +24,8 @@
        <hr>
 	   <div align="left">
            <form>
-              <input type="radio" name="themes" value="default" checked> Default<br>
-              <input type="radio" name="themes" value="plum"> Plum<br>
+              <input type="radio" name="themes" id="default" value="default" checked> Default<br>
+              <input type="radio" name="themes" id="plum" value="plum"> Plum<br>
               <input type="radio" name="themes" value="muted"> Muted<br>
               <input type="radio" name="themes" value="powder"> Powder<br>
               <input type="radio" name="themes" value="fresh"> Fresh
