@@ -13,3 +13,6 @@ function redirect(){
 	document.getElementById('pageStyle').setAttribute('href', 'css/themes/plum.css');
 }
  
+function cookies(){
+	var x = document.cookie;
+}
