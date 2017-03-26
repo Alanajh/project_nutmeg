@@ -13,47 +13,6 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#plum").click(function(){
-    	document.getElementById('pageStyle').setAttribute('href', 'css/themes/plum.css');
-    	function setCookie(cname,cvalue,exdays) {
-    	    var d = new Date();
-    	    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    	    var expires = "expires=" + d.toGMTString();
-    	    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    	}
-    	
-    	function getCookie(cname) {
-    	    var name = cname + "=";
-    	    var decodedCookie = decodeURIComponent(document.cookie);
-    	    var ca = decodedCookie.split(';');
-    	    for(var i = 0; i < ca.length; i++) {
-    	        var c = ca[i];
-    	        while (c.charAt(0) == ' ') {
-    	            c = c.substring(1);
-    	        }
-    	        if (c.indexOf(name) == 0) {
-    	            return c.substring(name.length, c.length);
-    	        }
-    	    }
-    	    return "";
-    	}
-
-    	function checkCookie() {
-    	    var user=getCookie("username");
-    	    if (user == "plum") {
-    	    	document.getElementById('pageStyle').setAttribute('href', 'css/themes/plum.css');
-    	    	window.location.href = "http://192.168.1.205/Project_Nutmeg/WebContent/index.php";
-    	    } else {
-    	       user = document.getElementById('pageStyle').setAttribute('href', 'css/themes/main/nutmeg.css');
-    	       if (user != "" && user != null) {
-    	           setCookie("username", user, 30);
-    	       }
-    	    }
-    	}
-    });
-});
-
-$(document).ready(function(){
     $("#muted").click(function(){
     	document.getElementById('pageStyle').setAttribute('href', 'css/themes/muted.css');
     });
@@ -71,12 +30,43 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("#chili").click(function(){
+    	document.getElementById('pageStyle').setAttribute('href', 'css/themes/chili.css');
+    });
+});
 
+$(document).ready(function(){
+    $("#daisyStems").click(function(){
+    	document.getElementById('pageStyle').setAttribute('href', 'css/themes/daisy_stems.css');
+    });
+});
+
+$(document).ready(function(){
+    $("#olives").click(function(){
+    	document.getElementById('pageStyle').setAttribute('href', 'css/themes/olives.css');
+    });
+});
+
+$(document).ready(function(){
+    $("#pleasant").click(function(){
+    	document.getElementById('pageStyle').setAttribute('href', 'css/themes/pleasant.css');
+    });
+});
+
+$(document).ready(function(){
+    $("#seaMint").click(function(){
+    	document.getElementById('pageStyle').setAttribute('href', 'css/themes/sea_mint.css');
+    });
+});
+
+$(document).ready(function(){
+    $("#plum").click(function(){
+    	document.getElementById('pageStyle').setAttribute('href', 'css/themes/plum.css');
+    });
+});
 function redirect(){
 	window.location.href = "http://192.168.1.205/Project_Nutmeg/WebContent/index.php";
 	document.getElementById('pageStyle').setAttribute('href', 'css/themes/plum.css');
 }
  
-function cookies(){
-	var x = document.cookie;
-}

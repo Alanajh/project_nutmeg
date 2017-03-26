@@ -4,8 +4,8 @@
 }
 
 body, html { 
-	background-color: rgb(74, 189, 172);
-	color: rgb(223, 220, 227);
+	background-color: rgb(103, 67, 56);
+	color: rgb(156, 126, 74);
     position: relative;
     height: 100%;
     width: 100%; /*fallback*/
@@ -19,7 +19,7 @@ body, html {
     height: 50%;
     padding: 0;
     margin: 0;
-    background-color: rgb(252, 74, 26);
+    background-color: rgb(156, 126, 74);
     position: absolute;
     top: 0px;
     -webkit-animation-name: top; /* Safari 4.0 - 8.0 */
@@ -35,7 +35,7 @@ body, html {
     top: 50%;
     padding: 0;
     margin: 0;
-    background-color: rgb(252, 74, 26);
+    background-color: rgb(156, 126, 74);
     position: absolute;
     -webkit-animation-name: bottom; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
@@ -63,7 +63,8 @@ body, html {
 }
 
 div .btn{
-	background-color: rgb(247, 135, 51);
+	background-color: rgb(64, 50, 33);
+	color: rgb(156, 126, 74);
     margin-bottom: 20px;
     width: 100%;
 }
@@ -90,7 +91,7 @@ div #setting:hover{
     width: 80%; /* Could be more or less, depending on screen size */
 }
 .modal-header{
-	background-color: rgb(192, 178, 131);
+	background-color: rgb(64, 50, 33);
 }
 
 /* Center the image and position the close button */

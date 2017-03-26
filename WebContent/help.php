@@ -26,9 +26,14 @@
            <form>
               <input type="radio" name="themes" id="default" value="default" checked> Default<br>
               <input type="radio" name="themes" id="plum" value="plum"> Plum<br>
-              <input type="radio" name="themes" value="muted"> Muted<br>
-              <input type="radio" name="themes" value="powder"> Powder<br>
-              <input type="radio" name="themes" value="fresh"> Fresh
+              <input type="radio" name="themes" id="muted" value="muted"> Muted<br>
+              <input type="radio" name="themes" id="powder" value="powder"> Powder<br>
+              <input type="radio" name="themes" id="chili" value="chili"> Chili<br>
+              <input type="radio" name="themes" id="daisyStems" value="daisyStem"> Daisy Stems<br>
+              <input type="radio" name="themes" id="olives" value="olives"> Olives<br>
+              <input type="radio" name="themes" id="pleasant" value="pleasant"> Pleasant<br>
+              <input type="radio" name="themes" id="seaMint" value="seaMint"> Sea Mint<br>
+              <input type="radio" name="themes" id="fresh"value="fresh"> Fresh
             </form>
 		</div>
 		<br>

@@ -5,6 +5,7 @@
 
 body, html { 
 	background-color: rgb(221, 201, 193);
+	color: rgb(56, 56, 56);
     position: relative;
     height: 100%;
     width: 100%; /*fallback*/
@@ -102,4 +103,14 @@ div #setting:hover{
 img.avatar {
     width: 40%;
     border-radius: 50%;
+}
+
+hr{
+	display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
 }

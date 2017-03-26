@@ -3,6 +3,7 @@
 	<name>Project_Nutmeg</name>
 	<comment></comment>
 	<projects>
+		<project>FruitsAndBears</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
