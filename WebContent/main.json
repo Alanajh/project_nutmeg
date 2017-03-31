@@ -1,4 +1,4 @@
-{"tests":[
+var json = {"tests":[
 	{
 		"language": "US-EN",
 		"grade": "5th (Fifth)",

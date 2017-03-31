@@ -19,45 +19,38 @@
 		<br>
 		<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-2 col-ld-2 col-lg-2" id="advertising">Lorem
+			<div class="col-xs-2 col-sm-2 col-ld-2 col-lg-2" id="advertising">Lorem
 				ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+				tempor incididunt ut exercitation ullamco laboris nisi ut aliquip ex
 				ea commodo consequat.</div>
-			<div class="col-sm-8 col-md-8 col-lg-8" id="question">Question</div>
-			<div class="col-sm-2 col-md-2 col-lg-2" id="advertising">Lorem
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="question">Question</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" id="advertising">Lorem
 				ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+				tempor incididunt ut exercitation ullamco laboris nisi ut aliquip ex
 				ea commodo consequat.</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
 				ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+				tempor incididunt ut labore ation ullamco laboris nisi ut aliquip ex
 				ea commodo consequat.</div>
-			<div class="col-sm-6 col-md-6 col-lg-6" id="answer">Answer</div>
-			<div class="col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="answer">Answer</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
 				ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+				tempor incididunt ut labore etion ullamco laboris nisi ut aliquip ex
 				ea commodo consequat.</div>
 		</div>
 		<div class="row">
 			<div class="btn-group">
-				<div class="col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
 					ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat.</div>
-				<div class="col-sm-6 col-md-6 col-lg-6" id="btn">
+					tempor incididt.</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="btn">
 					<button id="enter" type="button" class="btn btn-primary">enter</button>
 				</div>
-				<div class="col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
 					ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut minim
-					veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+					tempor incididunt ut laboreon ullamco laboris nisi ut aliquip
 					ex ea commodo consequat.</div>
 			</div>
 		</div>
@@ -66,41 +59,49 @@
 <img src= "http://3.bp.blogspot.com/-m0O_a08zEiQ/T1P5lVodfNI/AAAAAAAAAmM/jCQl_V4Ws6w/s1600/soccer-1.jpg" height="100" width="150" id="pic">
 	<script type="text/javascript">
 	// Evens are questions odds are answers. First set of questions starts at 0
-		var answer;
+		var answer, q;
 		var data;	
 		var url = "main.json";
+		var i = 1;
 		
 		$(document).ready(function(){
+			$("#enter").click(function(){
+				 $.getJSON("main.json", function(result){
+			        $.each(result, function(i, field){
+			            $("div").append(field + " ");
+			        });
+			    });
 			$.ajax({
 				url: url,
 				datatype: "json",
 				success: function(data) {
 				
-				$.each(data.tests[13].items, function(i, ob){
+				$.each(data.tests[0].items, function(i, ob){
+					
 					/*
 					if(!jQuery.isArray(data)) data = [data];
 					answer +=  ob.answer + "<br/>";
 					document.getElementById("answer").innerHTML = answer;
-					*/
+					
+					q += ob.question + "<br/>";
 					answer += ob.answer + "<br/>";
-					for(var i = 1; i < 5; i++){
-						
+					//for(var i; i < 1; i++){
+						document.getElementById("question").innerHTML = q;
 						document.getElementById("answer").innerHTML = answer;
-					}
+					//}*/
 				});
 				document.getElementById("enter").onclick = forward;
 				}
 			});
 		});
-		
+		});
 		function forward(){
+			i++;
 			var c = document.getElementById("pic");
 			c.getAttributeNode("src").value = "https://uploads6.wikiart.org/images/jean-michel-basquiat/notary.jpg";
 		}
 		
-		function getNext(){
-			
-		}
+		
 		</script>
     	<?php
     	echo $result;
