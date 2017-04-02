@@ -6,12 +6,15 @@ body, html{
 }
 
 .btn{
-	height: 30%;	
+	border: solid #00dcdc 8px;	
+	height: 100px;
 }
 
 #leftPanel{
 	background-color: #DCDCDC;
 	border: solid gray 1px;
+	height: 100vh;
+	overflow:auto; 
 	position: relative;
 	width: 20%;
 }
@@ -19,9 +22,19 @@ body, html{
 	background-color: #804000;
 }
 
-table{	
+#leftSide{	
+	height: 80%;
 	margin: 10px;
-	position: relative;	
+	overflow: scroll;
+	width: 90%;
+}
+
+#rightPanel #signal{
+	height: 15px;	
+}
+
+table{	
+	height: 80%;
 	width: 90%;
 }
 
