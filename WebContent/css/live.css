@@ -5,6 +5,10 @@ body, html{
 	width: 100%;
 }
 
+.btn{
+	height: 30%;	
+}
+
 #leftPanel{
 	background-color: #DCDCDC;
 	border: solid gray 1px;
