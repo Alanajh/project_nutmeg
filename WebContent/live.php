@@ -13,14 +13,18 @@
 	<div container="fluid">
 	<!-- left panel -->
 		<div id="leftPanel" class="btn-group-vertical">
-		<table>
+		<table width="90%">
 			<tr>
 				<td>
 					<button type="button" class="btn btn-primary btn-block">Student 1</button>
+  					<h4>Username</h4>
+  					<br>
   					<button type="button" class="btn btn-primary btn-block">Student 2</button>
+ 					<h4>Username</h4>
+  					<br>
  					<button type="button" class="btn btn-primary btn-block">Student 3</button>
+					<h4>Username</h4>
 				</td>
-				<td></td>
 			</tr>
 		</table>
 		</div>		
