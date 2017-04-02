@@ -13,15 +13,23 @@
 	<div container="fluid">
 	<!-- left panel -->
 		<div id="leftPanel" class="btn-group-vertical">
-			<button type="button" class="btn btn-primary">Student 1</button>
-  			<button type="button" class="btn btn-primary">Student 2</button>
- 			<button type="button" class="btn btn-primary">Student 3</button>
-		</div>
+		<table>
+			<tr>
+				<td>
+					<button type="button" class="btn btn-primary btn-block">Student 1</button>
+  					<button type="button" class="btn btn-primary btn-block">Student 2</button>
+ 					<button type="button" class="btn btn-primary btn-block">Student 3</button>
+				</td>
+				<td></td>
+			</tr>
+		</table>
+		</div>		
 	<!-- right panel -->
 		<div id="rightPanel">
 		
 		</div>
 	
+		
 	</div>
 </body>
 </head>

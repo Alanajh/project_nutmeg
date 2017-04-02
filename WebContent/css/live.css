@@ -3,9 +3,19 @@ body, html{
 	width: 100%;
 }
 
-leftPanel{
-	background-color: gray;
-	border; solid black 2px;
+#leftPanel{
+	background-color: #DCDCDC;
+	border: solid gray 1px;
 	position: relative;
-	width: 30%;
+	width: 20%;
+}
+
+table{
+	margin: 10px;
+	position: relative;	
+	width: 90%;
+}
+
+td{
+	width: 100%;
 }
