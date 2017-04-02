@@ -1,4 +1,5 @@
 body, html{
+	background-color: #804000;
 	height: 100%;
 	position: absolute;
 	width: 100%;
@@ -9,6 +10,9 @@ body, html{
 	border: solid gray 1px;
 	position: relative;
 	width: 20%;
+}
+#rightPanel{
+	background-color: #804000;
 }
 
 table{	
