@@ -20,6 +20,8 @@ body, html{
 }
 #rightPanel{
 	background-color: #804000;
+	border: solid yellow 2px;
+	padding:100%;
 }
 
 #leftSide{	
@@ -29,9 +31,6 @@ body, html{
 	width: 90%;
 }
 
-#rightPanel #signal{
-	height: 15px;	
-}
 
 table{	
 	height: 80%;
