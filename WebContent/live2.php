@@ -24,7 +24,6 @@
 				  		<button type="button" class="btn btn-primary"><input type="image" src="src/users/student_girl_1.PNG" style="width:50px; height:50px; align:left;" >AvaRA</button>
 	  					<h4>Avapants</h4>
 	  					</div>
-	  					
 	  					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 	  					<h5>00/00</h5>
 	  					</div>
@@ -72,8 +71,16 @@
 			  	</div>
 		  	</div>
   </div>
-  <div class="fixedCont">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis mollitia amet ipsam vel saepe, rerum deserunt accusantium ratione reprehenderit eaque unde cumque! Expedita amet molestiae, dolorem porro nam nisi dolorum.
+  <div class="fixedCont container">
+    <div class="row">
+        <div id="top" class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-2"><div class="">1</div></div>
+                <div class="col-xs-8"><div class="ask">Ask me something</div></div>
+                <div class="col-xs-2"><div class="">3</div></div>
+            </div>
+        </div>
+    </div>
   </div>
 </section>
 

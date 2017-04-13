@@ -2,12 +2,14 @@ html, body {
 	background-color: rgb(210, 238, 247);
     margin: 0;
 }
-
+#top div {
+    color: red;
+    font-weight: bold;
+}
 .section1 {
   background-color: #fff;
   height: 300px;
 }
-
 section {
   display: flex;
   flex-wrap: wrap;
@@ -19,9 +21,11 @@ section .userList .row{
   border: solid white 2px;	
   padding: 5px;
 }
-
 section .userList div{
-	
+	color:red;
+}
+section .fixedCont div{
+	background-color: red;
 }
 section .fixedCont {
   height: 100vh;
