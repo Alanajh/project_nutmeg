@@ -74,9 +74,12 @@
   <div class="fixedCont container">
     <div class="row">
         <div id="top" class="col-xs-12">
+        	<div class="row">
+        		<div class="col-xs-12"><img id="blink" src="src/Blink-Green.gif"></div>	
+        	</div>
             <div class="row">
                 <div class="col-xs-2"><div class="">1</div></div>
-                <div class="col-xs-8"><div class="ask">Ask me something</div></div>
+                <div class="col-xs-8"><div class="ask">Ask me something<br><button>submit</button></div></div>
                 <div class="col-xs-2"><div class="">3</div></div>
             </div>
         </div>
@@ -86,7 +89,6 @@
 
 <!-------------------------------------------------------------------------------->
 	
-</body>
 <script>
 	$(document).ready(function(){
 	$(function(){
@@ -99,5 +101,55 @@
 		});
 	});
 });
-</script>
+
+		var answer, q;
+		var data;	
+		var url = "main.json";
+		var i = 1;
+		
+		$(document).ready(function(){
+			$("#enter").click(function(){
+				 $.getJSON("main.json", function(result){
+			        $.each(result, function(i, field){
+			            $("div").append(field + " ");
+			        });
+			    });
+			$.ajax({
+				url: url,
+				datatype: "json",
+				success: function(data) {
+				
+				$.each(data.tests[0].items, function(i, ob){
+			
+				});
+				document.getElementById("enter").onclick = forward;
+				}
+			});
+		});
+		});
+		function forward(){
+			i++;
+			var c = document.getElementById("pic");
+			c.getAttributeNode("src").value = "https://uploads6.wikiart.org/images/jean-michel-basquiat/notary.jpg";
+		}
+		
+		</script>
+    	<?php
+    	echo $result;
+        echo "<table>";
+            echo "<tr>";
+                echo "<th><b>TYPE</b></th>";
+                echo "<th><b>ID</b></th>";
+            echo "</tr>";
+        while($row = $result->fetch()){
+            echo "<tr>";
+                echo "<td>" . $row['user'] . "</td>";
+                echo "<td>" . $row['id'] . "</td>";
+            echo "</tr>";
+        }
+        echo "</table>";
+        // Free result set
+        unset($result);
+        ?>
+       </div> 
 </html>
