@@ -21,7 +21,7 @@
            <a href="scores.php" class="btn btn-success" id="mainScores">SCORES</a>
            <a href="roomreach.php" class="btn btn-success" id="mainReach">ROOM REACH</a>
            <a href="help.php" class="btn btn-success" id="mainHelp">HELP</a>
-           <a href="live.php" class="btn btn-success" id="mainLive">LIVE</a>
+           <a href="live2.php" class="btn btn-success" id="mainLive">LIVE</a>
            <div>
 
         </div>
