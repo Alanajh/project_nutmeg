@@ -21,7 +21,7 @@ section .userList div{
   color:red;
 }
 section .fixedCont div #top #ask{
-  background-color: red;
+  background-color: cyan;
   text-align: center;
 }
 section .fixedCont {
@@ -36,7 +36,31 @@ section .fixedCont.active {
   top: 0;
 }
 section .fixedCont div #top  #blink{
-  margin: 5px;
+  padding: 5px;
   text-align: left;
   width: 20px;
+}
+section .fixedCont div #top  #userLog{
+  width: 40px;
+}
+section .fixedCont div #top{
+  background-size: contain;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+section .fixedCont div #top #logo{
+  width: 50px;
+}
+section .fixedCont div #top div{
+  font-family: Georgia, serif;
+}
+section .fixedCont div #top #mid{
+  height: 75vh;
+  margin-top: 10px;
+  text-align: center;
+}
+section .fixedCont div #top #details{
+  margin: 80px;
+  text-align: left;
 }
