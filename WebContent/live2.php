@@ -2,7 +2,7 @@
 <html lang="em">
 <head>
 <title>Nutmeg - Live</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/live2.css">
 
@@ -15,10 +15,10 @@
 	<!--<div container="fluid">-->
 
 <section>
- <div class="userList container">
+ <div class="container-fluid userList ">
    <!-- USER ONE -->
   	<div class="row">
-		<div class="col-xs-10">
+		<div class="col-xs-12">
             <div class="row">
             	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 					<button type="button" class="btn btn-primary"><input type="image" src="src/users/student_girl_1.PNG" style="width:50px; height:50px; align:left;" >AvaRA</button>
@@ -32,7 +32,7 @@
 		  	
   	<!-- USER TWO -->
 	<div class="row">
-		<div class="col-xs-10">
+		<div class="col-xs-12">
             <div class="row">
             	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 					<button type="button" class="btn btn-primary"><input type="image" src="src/users/student_girl_1.PNG" style="width:50px; height:50px; align:left;" >AliciaRA</button>
@@ -60,7 +60,7 @@
 		  	
 	<!-- USER FOUR -->
 	<div class="row">
-			<div class="col-xs-10">
+			<div class="col-xs-12">
 	            <div class="row">
 	            	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 						<button type="button" class="btn btn-primary"><input type="image" src="src/glasses.png" style="width:50px; height:50px; align:left;" >AlanaJH</button>
