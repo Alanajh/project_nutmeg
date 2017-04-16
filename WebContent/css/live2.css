@@ -45,7 +45,7 @@ section .fixedCont div #top  #userLog{
 }
 section .fixedCont div #top{
   background-size: contain;
-  margin: 50px;
+  margin: 10px;
   padding: 5px;
   text-align: center;
 }
@@ -62,4 +62,7 @@ section .fixedCont div #top #mid{
 section .fixedCont div #top #details{
   margin: 80px;
   text-align: left;
+}
+section .fixedCont div #top col{
+	padding: 20px;
 }
