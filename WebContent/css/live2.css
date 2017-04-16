@@ -56,7 +56,6 @@ section .fixedCont div #top div{
   font-family: Georgia, serif;
 }
 section .fixedCont div #top #mid{
-  height: 75vh;
   margin-top: 10px;
   text-align: center;
 }

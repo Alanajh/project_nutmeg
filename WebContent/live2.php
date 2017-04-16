@@ -12,13 +12,13 @@
 <body>
 
 
-	<div container="fluid">
+	<!--<div container="fluid">-->
 
 <section>
  <div class="userList container">
    <!-- USER ONE -->
   	<div class="row">
-		<div class="col-xs-12">
+		<div class="col-xs-10">
             <div class="row">
             	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 					<button type="button" class="btn btn-primary"><input type="image" src="src/users/student_girl_1.PNG" style="width:50px; height:50px; align:left;" >AvaRA</button>
@@ -32,7 +32,7 @@
 		  	
   	<!-- USER TWO -->
 	<div class="row">
-		<div class="col-xs-12">
+		<div class="col-xs-10">
             <div class="row">
             	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 					<button type="button" class="btn btn-primary"><input type="image" src="src/users/student_girl_1.PNG" style="width:50px; height:50px; align:left;" >AliciaRA</button>
@@ -60,7 +60,7 @@
 		  	
 	<!-- USER FOUR -->
 	<div class="row">
-			<div class="col-xs-12">
+			<div class="col-xs-10">
 	            <div class="row">
 	            	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 						<button type="button" class="btn btn-primary"><input type="image" src="src/glasses.png" style="width:50px; height:50px; align:left;" >AlanaJH</button>
@@ -72,25 +72,7 @@
 	        </div>
 		</div>		  	
 		
-	<!-- USER FIVE -->
-		  	<div class="row">
-			  	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="border: solid white 2px;">	
-			  		<button type="button" class="btn btn-primary btn-block"><input type="image" src="src/hipster.png" style="width:50px; height:50px; align:left;" id="userFace">AvaRA</button>
-  					<h4>Username</h4>
-			  	</div>
-		  	</div>
-		  	
-		  	<!-- USER SIX -->
-		  	<div class="row">
-			  	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="border: solid white 2px;">	
-			  		<button type="button" class="btn btn-primary btn-block"><input type="image" src="src/hipster.png" style="width:50px; height:50px; align:left;" id="userFace">AvaRA</button>
-  					<h4>Username</h4>
-			  	</div>
-			  	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="border: solid white 2px;">	
-			  		<button type="button" class="btn btn-primary btn-block"><input type="image" src="src/hipster.png" style="width:50px; height:50px; align:left;" id="userFace">AvaRA</button>
-  					<h4>Username</h4>
-			  	</div>
-		  	</div>
+
   </div>
   <div class="fixedCont container">
     <div class="row">
@@ -170,22 +152,6 @@
 		}
 		
 		</script>
-    	<?php
-    	echo $result;
-        echo "<table>";
-            echo "<tr>";
-                echo "<th><b>TYPE</b></th>";
-                echo "<th><b>ID</b></th>";
-            echo "</tr>";
-        while($row = $result->fetch()){
-            echo "<tr>";
-                echo "<td>" . $row['user'] . "</td>";
-                echo "<td>" . $row['id'] . "</td>";
-            echo "</tr>";
-        }
-        echo "</table>";
-        // Free result set
-        unset($result);
-        ?>
+		
        </div> 
 </html>
