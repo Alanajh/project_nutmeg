@@ -8,14 +8,14 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 </head>
+
 <body>
 
-<div id="div1">Everything</div>
-<div id="images"></div>
-	<!--<div container="fluid">-->
-
+<!--<div container="fluid">-->
+<div id="demo">DEMO</div>
 <section>
  <div class="container-fluid userList ">
    <!-- USER ONE -->
@@ -122,22 +122,66 @@
 		});
 	});
 
-	(function() {
-	  var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-	  $.getJSON( flickerAPI, {
+</script>	
+<script>
+/*
+(function() {
+  var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+  $.getJSON( flickerAPI, {
+    tags: "mount rainier",
+    tagmode: "any",
+    format: "json"
+  })
+    .done(function( data ) {
+      $.each( data.items, function( i, item ) {
+        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#details" );
+        if ( i === 3 ) {
+          return false;
+        }
+      });
+    });
+})();
+
+	var mainAPI = "main.json";
+	  $.getJSON( mainAPI, {
 	    tags: "mount rainier",
 	    tagmode: "any",
 	    format: "json"
 	  })
 	    .done(function( data ) {
 	      $.each( data.items, function( i, item ) {
-	        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
+	        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#details" );
 	        if ( i === 3 ) {
 	          return false;
 	        }
 	      });
 	    });
-	})();
-</script>	
-       </div> 
+	   
+	    
+	    <script type="text/javascript">*/
+	// Evens are questions odds are answers. First set of questions starts at 0
+		var answer;
+		var data;	
+		var url = "main.json";
+		
+		$(document).ready(function(){
+			$.ajax({
+				url: url,
+				datatype: "json",
+				success: function(data) {
+				
+				$.each(data.tests[3].items, function(i, ob){
+					answer += ob.answer + "<br/>";
+					for(var i = 1; i < 1; i++){
+						
+						document.getElementById("demo").innerHTML = answer;
+					}
+				});
+				}
+			});
+		});
+		
+		
+	</script>
+</div> 
 </html>
