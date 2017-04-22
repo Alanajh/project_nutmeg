@@ -10,12 +10,30 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-</head>
+<script type="text/javascript">
 
+function ajax_get_json(){
+	var hr = new XMLHttpRequest();
+	hr.open("GET", "main.json", true):
+	hr.setRequestHeader("Content-type", "application/json", true);
+	hr.onreadystatechange = function(){
+		if(hr.readyState == 4 && hr.status == 200){
+			var data = JSON.parse(hr.responseText);
+			var results = document.getElementById("demo");
+			results.innerHTML = data.title;
+		}
+	}
+	hr.send(null
+	results.innerHTML = "processing...";
+}
+</script>
+
+</head>
 <body>
 
 <!--<div container="fluid">-->
 <div id="demo">DEMO</div>
+<script type="text/javascript">ajax_get_json()</script>
 <section>
  <div class="container-fluid userList ">
    <!-- USER ONE -->
@@ -110,6 +128,7 @@
 <!-------------------------------------------------------------------------------->
 	
 <script>
+
 // Scrolling side bar 
 	$(document).ready(function(){
 	$(function(){
@@ -120,68 +139,31 @@
 				$(".fixedCont").removeClass("active");
 			}
 		});
+		
+		});
 	});
 
+	
 </script>	
 <script>
-/*
-(function() {
-  var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-  $.getJSON( flickerAPI, {
-    tags: "mount rainier",
-    tagmode: "any",
-    format: "json"
-  })
-    .done(function( data ) {
-      $.each( data.items, function( i, item ) {
-        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#details" );
-        if ( i === 3 ) {
-          return false;
-        }
-      });
-    });
-})();
 
-	var mainAPI = "main.json";
-	  $.getJSON( mainAPI, {
-	    tags: "mount rainier",
+	(function() {
+	  var flickerAPI = "main.json";
+	  $.getJSON( flickerAPI, {
+	    tags: "grade",
 	    tagmode: "any",
 	    format: "json"
 	  })
 	    .done(function( data ) {
 	      $.each( data.items, function( i, item ) {
-	        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#details" );
+	        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#demo" );
 	        if ( i === 3 ) {
 	          return false;
 	        }
 	      });
 	    });
-	   
-	    
-	    <script type="text/javascript">*/
-	// Evens are questions odds are answers. First set of questions starts at 0
-		var answer;
-		var data;	
-		var url = "main.json";
-		
-		$(document).ready(function(){
-			$.ajax({
-				url: url,
-				datatype: "json",
-				success: function(data) {
-				
-				$.each(data.tests[3].items, function(i, ob){
-					answer += ob.answer + "<br/>";
-					for(var i = 1; i < 1; i++){
-						
-						document.getElementById("demo").innerHTML = answer;
-					}
-				});
-				}
-			});
-		});
-		
-		
-	</script>
+	})();
+
+</script>
 </div> 
 </html>

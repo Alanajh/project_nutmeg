@@ -55,7 +55,7 @@
            
            <div class="modal-body">
                <div class="container">
-               <form id='login' action='login.php' method='POST' accept-charset='UTF-8'>
+               <form id='login' action='users/login.php' method='POST' accept-charset='UTF-8'>
               <label><b>Username</b></label>
               <input type="text" placeholder="Enter Username" name="user" required>
         		<br>

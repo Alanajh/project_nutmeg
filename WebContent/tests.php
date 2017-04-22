@@ -15,7 +15,7 @@
 <!-- TEST SCREEN -->
     <div class="text-center">
  	<img src="src/nutmeg_logo.png"/><br>
-       <h3>Test</h3>
+       <h3 id="word">Test</h3>
 		<br>
 		<div class="container-fluid">
 		<div class="row">
@@ -46,7 +46,7 @@
 					ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididt.</div>
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="btn">
-					<button id="enter" type="button" class="btn btn-primary">enter</button>
+					<button id="enter" type="button" class="btn btn-primary" onclick="loadDoc()">enter</button>
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="advertising">Lorem
 					ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -57,8 +57,8 @@
 	</div>
 
 <img src= "http://3.bp.blogspot.com/-m0O_a08zEiQ/T1P5lVodfNI/AAAAAAAAAmM/jCQl_V4Ws6w/s1600/soccer-1.jpg" height="100" width="150" id="pic">
-	<script type="text/javascript">
-	// Evens are questions odds are answers. First set of questions starts at 0
+	<script>
+	
 		var answer, q;
 		var data;	
 		var url = "main.json";
@@ -101,8 +101,6 @@
 			c.getAttributeNode("src").value = "https://uploads6.wikiart.org/images/jean-michel-basquiat/notary.jpg";
 		}
 		
-		
-		</script>
     	<?php
     	echo $result;
         echo "<table>";
@@ -120,6 +118,23 @@
         // Free result set
         unset($result);
         ?>
+        </script>
+        <script>
+    
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+		var x = this.responseText;
+        document.getElementById("word").innerHTML = x;
+    }
+  };
+  xhttp.open("GET", "http://www.dictionaryapi.com/api/v1/references/collegiate/xml/vulture?key=c49f5474-fb60-46fb-8354-f39553264c15",true);
+  xhttp.send();
+}
+
+
+        </script>
     </div>   
 </body>
 </head>
