@@ -55,14 +55,14 @@
            
            <div class="modal-body">
                <div class="container">
-               <form id='login' action='users/login.php' method='POST' accept-charset='UTF-8'>
+               <form id='login' action='login.php' method='POST' accept-charset='UTF-8'>
               <label><b>Username</b></label>
               <input type="text" placeholder="Enter Username" name="user" required>
         		<br>
               <label><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="pswd" required>
                 <br>
-              <button id="enter" type="submit" name="Submit">Login</button>
+              <button id="enter" type="submit" name="Submit" value="student">Login</button>
               <br>
               <input type="checkbox" checked="checked"> Remember me
               </form>
@@ -86,14 +86,16 @@
            </div>
            <div class="modal-body">
                <div class="container">
+               <form id='login' action='teacher.php' method='POST' accept-charset='UTF-8'>
               <label><b>Username</b></label>
               <input type="text" placeholder="Enter Username" name="uname" required>
         
               <label><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="psw" required>
                 
-              <button type="submit">Login</button>
+              <button type="submit" value="teacher">Login</button>
               <input type="checkbox" checked="checked"> Remember me
+              </form>
             </div>
            </div>
            <div class="modal-footer">
@@ -133,7 +135,15 @@
 </div>
 </div>
 
+<script>
+<!-- JAVASCRIPT FOR MODAL -->
 
+$(document).ready(function(){
+	$('href').click(function(){
+		alert('hello');
+	});
+});
+</script>
 </body>
 </html>
 

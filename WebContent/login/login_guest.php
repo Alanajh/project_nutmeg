@@ -25,7 +25,7 @@ try{
 	$user = $_POST['user'];
 	$password = $_POST ['pswd'];
 	
-    $sql = "SELECT * FROM nutmegpswddb WHERE user = '$user' and password = '$password'";   
+    $sql = "SELECT * FROM nutmegpswddb WHERE user = '$user' and password = '$password' and account_type = 'guest'";   
     $result = $DBH->query($sql);
     if($result->rowCount() > 0){
     	require 'menu.php';
