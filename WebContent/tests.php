@@ -9,12 +9,49 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script type="text/javascript" src="javascript/settings.js"></script>
    <script type="text/javascript" src="main.json"></script>
-	<link id="pageStyle" rel="stylesheet" href="css/themes/main/nutmeg.css">
+	<link id="pageStyle" rel="stylesheet" href="css/testFormat_1.css">
 </head>
 <body>
+
+<?php
+session_start();
+
+$host = 'localhost';
+$database = 'nutmeg';
+$username = 'root';
+$password = 'root';
+ 
+try {
+  $DBH = new PDO("mysql:host=$host;dbname=$database", $username, $password);
+ 
+}
+catch(PDOException $e) {
+    echo $e->getMessage();
+}
+
+try{
+	//$user = $_POST['user']; // use this as a base to get info from before
+	$selector = rand(1, 50); // term, definition
+	
+    $sql = "SELECT * FROM test_statesCapitals WHERE selector = '$selector' ";   
+    $result = $DBH->query($sql);
+    if($result->rowCount() > 0){
+    	
+    } else{
+    	require 'errors.php';
+       // echo "The username and/or password was incorrect";
+    }
+} catch(PDOException $error){
+    die("ERROR: Could not execute $sql. " . $error->getMessage());
+}
+ 
+// Close connection
+unset($pdo);
+?>
+
 <!-- TEST SCREEN -->
     <div class="text-center">
- 	<img src="src/nutmeg_logo.png"/><br>
+ 	<img src="src/nutmeg_logo.png" id="logo"/><br>
        <h3 id="word">Test</h3>
 		<br>
 		<div class="container-fluid">
@@ -134,7 +171,7 @@ function loadDoc() {
 }
 
 
-        </script>
-    </div>   
+
+        </script>  
 </body>
 </head>
