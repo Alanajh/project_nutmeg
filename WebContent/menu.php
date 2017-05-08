@@ -17,7 +17,7 @@
     	<img src="src/nutmeg_logo.png"/>
         <div class="btn-group-vertical" id="menuBtns">
          
-           <a href="tests.php" class="btn btn-success" id="mainTests">TESTS</a>
+           <a href="subjectSelector.php" class="btn btn-success" id="mainTests">TESTS</a>
            <a href="scores.php" class="btn btn-success" id="mainScores">SCORES</a>
            <a href="roomreach.php" class="btn btn-success" id="mainReach">ROOM REACH</a>
            <a href="help.php" class="btn btn-success" id="mainHelp">HELP</a>
