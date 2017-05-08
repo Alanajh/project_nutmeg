@@ -34,7 +34,7 @@ try{
 	$selector = rand(1, 50); // term, definition
 	
     $sql = "SELECT * FROM test_statesCapitals WHERE selector = '$selector' ";   
-    $result = $DBH->query($sql);
+    $result = $DBH->query($selector);
     if($result->rowCount() > 0){
     	
     } else{
