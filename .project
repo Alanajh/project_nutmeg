@@ -34,4 +34,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>project</name>
+			<type>2</type>
+			<location>/Applications/MAMP_2017-05-07_18-57-02/htdocs/Sites/project</location>
+		</link>
+	</linkedResources>
 </projectDescription>

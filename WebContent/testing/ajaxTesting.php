@@ -19,7 +19,7 @@ function display(i) {
         }
     };
     xmlhttp.open("GET", "http://www.stands4.com/services/v2/abbr.php?uid=5704&tokenid=iaXB5Yu5tb0IRiBA&term=asap", true);
-    xmlhttp.send();
+    xmlhttp.send();    
 }
 
 function myFunction(xml, i) {
