@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;   
+}
+
+body, html { 
+	background-color: rgb(221, 201, 193);
+	color: rgb(56, 56, 56);
+    position: relative;
+    height: 100%;
+    width: 100%; /*fallback*/
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}   
+
+#top {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(192, 178, 131);
+    position: absolute;
+    top: 0px;
+    -webkit-animation-name: top; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards;
+    animation-name: top;
+    animation-duration: 8s;
+}
+
+#bottom {
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(192, 178, 131);
+    position: absolute;
+    -webkit-animation-name: bottom; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards;
+    animation-name: bottom;
+    animation-duration: 8s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bottom{
+    0%   {left:0px; top: 50%;}
+    35%  {left:0px; top: 95%;}
+    100% {left:0px; top: 100%;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes top {
+    0%   {left:0px; height: 50%;}
+   30% {left: 0px; height: 15%;}
+    100% {left:0px; height:0%;}  
+}
+
+.row{
+    z-index: 1;
+}
+
+div .btn{
+	background-color: rgb(244, 244, 244);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#menuBtns{
+    width: 90%;
+    margin: auto;
+}
+
+#menuBtns .btn{
+	padding: 30px;
+}
+
+div #setting:hover{
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+.modal-header{
+	background-color: rgb(192, 178, 131);
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+hr{
+	display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}

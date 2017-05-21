@@ -1,0 +1,42 @@
+body, html{
+	background-color: #804000;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+.btn{
+	border: solid #00dcdc 8px;	
+	height: 100px;
+}
+
+#leftPanel{
+	background-color: #DCDCDC;
+	border: solid gray 1px;
+	height: 100vh;
+	overflow:auto; 
+	position: relative;
+	width: 20%;
+}
+#rightPanel{
+	background-color: #804000;
+	border: solid yellow 2px;
+	padding:100%;
+}
+
+#leftSide{	
+	height: 80%;
+	margin: 10px;
+	overflow: scroll;
+	width: 90%;
+}
+
+
+table{	
+	height: 80%;
+	width: 90%;
+}
+
+h4{
+	margin: 10px;
+}

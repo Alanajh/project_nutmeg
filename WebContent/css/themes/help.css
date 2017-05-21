@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;   
+}
+
+body, html { 
+    background-color: rgb(210, 238, 247);
+    position: relative;
+    height: 100%;
+    width: 100%; /*fallback*/
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}   
+
+hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
+
+input[name=themes]{
+	text-align: left;
+	background-color: red;
+	border: solid 2px black;
+}
+
+#title{
+	text-align: left;
+}
+
+#mainHelpSubmit{
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
