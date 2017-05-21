@@ -4,57 +4,58 @@
 
 </head>
 <body>
-
 <?php
-session_start();
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "nutmeg";
 
-$host = 'localhost';
-$database = 'nutmeg';
-$username = 'root';
-$password = 'root';
- 
-try {
-  $DBH = new PDO("mysql:host=$host;dbname=$database", $username, $password);
- 
-}
-catch(PDOException $e) {
-    echo $e->getMessage();
-}
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
 
-try{
-	$user = $_POST['user'];
-	$password = $_POST ['pswd'];
-	
-    $sql = "SELECT * FROM nutmegpswddb WHERE user = '$user' and password = '$password' and account_type = 'student'";   
-    $result = $DBH->query($sql);
-    if($result->rowCount() > 0){
-    	require 'menu.php';
-    } else{
-    	require 'errors.php';
-       // echo "The username and/or password was incorrect";
+$sql = "SELECT account_type from nutmeg_pswd_db";
+$result = $conn->query($sql);
+
+if ($result > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Name: " . $row["user"]. "<br>";
     }
-} catch(PDOException $error){
-    die("ERROR: Could not able to execute $sql. " . $error->getMessage());
+} else {
+    echo "0 results";
 }
- 
-// Close connection
-unset($pdo);
-?>
-</body>
-</html>";   
-    $result = $DBH->query($sql);
-    if($result->rowCount() > 0){
-    	require 'menu.php';
-    } else{
-    	require 'errors.php';
-       // echo "The username and/or password was incorrect";
-    }
-} catch(PDOException $error){
-    die("ERROR: Could not able to execute $sql. " . $error->getMessage());
-}
- 
-// Close connection
-unset($pdo);
+$conn->close();
+
+  		
+      // username and password sent from form 
+      /*
+      $myusername = mysqli_real_escape_string($db,$_POST['user']);
+      $mypassword = mysqli_real_escape_string($db,$_POST['pswd']); 
+      
+      $sql = "SELECT account_type FROM nutmeg_pswd_db WHERE user = '$myusername' and password = '$mypassword'";
+      $result = mysqli_query($db,$sql);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      $active = $row['active'];
+      
+      $count = mysqli_num_rows($result);
+      
+      // If result matched $myusername and $mypassword, table row must be 1 row
+		
+      if($count == 1) {
+         session_register("myusername");
+         $_SESSION['login_user'] = $myusername;
+         echo "golden";
+         header("location: welcome.php");
+      }else {
+         $error = "Your Login Name or Password is invalid";
+         echo "error";
+      }
+   */
+   
 ?>
 </body>
 </html>

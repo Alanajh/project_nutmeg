@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <script src="javascript/settings.js"></script>
-	<link id="pageStyle" rel="stylesheet" href="css/themes/main/nutmeg.css">
+	<link rel="stylesheet" href="css/nutmeg.css">
 
 </head>
 <body>
@@ -29,12 +28,7 @@
            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#teacherModal" id="teacher">Teacher</a>
            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#adminModal" id="admin">Administrator</a>
            <a href="#" id="guest" class="btn btn-success">Guest</a>
-           <div>
-           <img src="css/themes/main/settings_8.png" style="width:100px; float:right;" id="setting"/>
-           <audio>
-				<source src="src/audio/click.wav" id="sound"></source>
-		   </audio>
-        </div>
+     
         </div>
     </div>
    </form>
@@ -62,7 +56,7 @@
               <label><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="pswd" required>
                 <br>
-              <button id="enter" type="submit" name="Submit" value="student">Login</button>
+              <button id="enter" type="submit" name="Submit">Login</button>
               <br>
               <input type="checkbox" checked="checked"> Remember me
               </form>
@@ -86,16 +80,14 @@
            </div>
            <div class="modal-body">
                <div class="container">
-               <form id='login' action='teacher.php' method='POST' accept-charset='UTF-8'>
               <label><b>Username</b></label>
               <input type="text" placeholder="Enter Username" name="uname" required>
         
               <label><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="psw" required>
                 
-              <button type="submit" value="teacher">Login</button>
+              <button type="submit">Login</button>
               <input type="checkbox" checked="checked"> Remember me
-              </form>
             </div>
            </div>
            <div class="modal-footer">
@@ -135,15 +127,7 @@
 </div>
 </div>
 
-<script>
-<!-- JAVASCRIPT FOR MODAL -->
 
-$(document).ready(function(){
-	$('href').click(function(){
-		alert('hello');
-	});
-});
-</script>
 </body>
 </html>
 
