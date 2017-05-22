@@ -36,8 +36,6 @@ catch(PDOException $e) {
 }
 
 try{
-	//$user = $_POST['user'];
-	//$password = $_POST ['pswd'];
 	
     $sql = "SELECT name FROM test";   
     $result = $DBH->query($sql);
@@ -46,13 +44,12 @@ try{
     	 echo "Name: " . $row["name"]";  
     } else{
     	require 'errors.php';
-       // echo "The username and/or password was incorrect";
+       echo "The username and/or password was incorrect";
     }
 } catch(PDOException $error){
     die("ERROR: Could not able to execute $sql. " . $error->getMessage());
 }
  
-// Close connection
 unset($pdo);
 ?>
 
