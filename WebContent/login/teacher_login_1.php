@@ -20,37 +20,26 @@
 
 <!-- SQL -->
 <?php
-session_start();
 
-$host = 'localhost';
-$database = 'nutmeg';
-$username = 'root';
-$password = 'root';
- 
-try {
-  $DBH = new PDO("mysql:host=$host;dbname=$database", $username, $password);
- 
-}
-catch(PDOException $e) {
-    echo $e->getMessage();
-}
+	$server = "localhost";
+	$db = "nutmeg";
+	$user = "root";
+	$password = "root";
 
-try{
-	
-    $sql = "SELECT name FROM test";   
-    $result = $DBH->query($sql);
+	try{
+		$dbh = new PDO("mysql:host=$server; dbname=$db",
+				$user, $password);
+	}catch(PDOException $e){
+		echo "bad days, hard times";
+		die();
+	}
+		$sql = "SELECT * FROM test_national_parks_and_states"; 
+	    $result = $dbh->query($sql);
 
-    if($result->rowCount() > 0){
-    	 echo "Name: " . $row["name"]";  
-    } else{
-    	require 'errors.php';
-       echo "The username and/or password was incorrect";
-    }
-} catch(PDOException $error){
-    die("ERROR: Could not able to execute $sql. " . $error->getMessage());
-}
- 
-unset($pdo);
+		foreach($dbh->query($sql) as $row){
+			echo $row['park']." - ".$row['abb_state']."<br>";
+	}
+$dbh = null;		
 ?>
 
 	<div class="row">
