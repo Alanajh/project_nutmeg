@@ -15,7 +15,10 @@
 	
 	<!-- Externl login -->
 	<script src="../javascript/teacher_login.js"></script>	
-</head>
+	
+	<!--  External CSS -->
+	<link rel="stylesheet" href="../css/teacher_login_1.css">
+</head>	
 <body class="container-fluid">
 
 <!-- SQL -->
@@ -30,16 +33,10 @@
 		$dbh = new PDO("mysql:host=$server; dbname=$db",
 				$user, $password);
 	}catch(PDOException $e){
-		echo "bad days, hard times";
 		die();
 	}
-		$sql = "SELECT * FROM test_national_parks_and_states"; 
-	    $result = $dbh->query($sql);
-
-		foreach($dbh->query($sql) as $row){
-			echo $row['park']." - ".$row['abb_state']."<br>";
-	}
-$dbh = null;		
+		$sql = "SELECT table_name FROM main_test_listing WHERE NULLIF(table_name, ' ')IS NOT NULL ORDER BY table_name"; 
+	    $result = $dbh->query($sql);			
 ?>
 
 	<div class="row">
@@ -64,64 +61,21 @@ $dbh = null;
 			<p>Test listing</p>
 			<hr style="height:5px; border:none; color: lightgray; background-color: lightgray;" />
 			<div class="row">
-				
-				<table style="width:100%; border-left: 2px solid lightgray;">
-					<tr>
-					    <th></th>
-					    <th>Test</th> 
-					    <th>edit/delete</th>
-					  </tr>
-					  <tr>
-					    <td style="padding-left: 15px;">1</td>
-					    <td>World War II</td> 
-					    <td><a href=""><span class="glyphicon glyphicon-trash"></span></a></td>
-					  </tr>
-					  <tr>
-					    <td style="padding-left: 15px;">2</td>
-					    <td>International Government Architecture</td> 
-					    <td><a href=""><span class="glyphicon glyphicon-trash"></span></a></td>
-					  </tr>
-				</table>
-				
-				<ul style="border-left: 3px solid lightgray;">
-					<div class="row">
-					
-						<div class="col-sm-1 col-md-1 col-lg-1"><div class="results"></div></div>
-						<div class="col-sm-10 col-md-10 col-lg-10">
-							<li><a href="">Chemistry - The Periodic Table<a></li>
-						</div>
-						<div class="col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div>
-					</div>
-					
-					<div class="row">
-						<div class="col-sm-1 col-md-1 col-lg-1">2</div>
-						<div class="col-sm-10 col-md-10 col-lg-10">
-							<li><a href="">Geography - The States and Capitals of the United States<a></li>
-						</div>
-						<div class="col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div>
-					</div>
-					
-					<div class="row">
-						<div class="col-sm-1 col-md-1 col-lg-1">3</div>
-						<div class="col-sm-10 col-md-10 col-lg-10">
-							<li><a href="">Finances - Major Stock Exchanges and Their Abbreviations<a></li>
-						</div>
-						<div class="col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div>
-					</div>
-					
-					<div class="row">
-						<div class="col-sm-1 col-md-1 col-lg-1">4</div>
-						<div class="col-sm-10 col-md-10 col-lg-10">
-							<li><a href="">Finances - Popular Companies that Changed Their Original Name<a></li>
-						</div>
-						<div class="col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div>
-					</div>
-				</ul>
-				</div>
-			</div>
+			<?php
+					echo "<table id='bulls'><tr><th>Test</th><th>Delete</th></tr>";
+				foreach($dbh->query($sql) as $row){
+					echo "<tr><td><a href='example.php'>". $row['title']. "</a></td>";
+					echo "<td><a href=''><span class='glyphicon glyphicon-trash'></span></a></td>";
+					echo "</tr>";
+				}
+					echo "</table>";
+				$dbh = null;	
+			?>
+		</div> <!-- END OF TABLE ROW -->
+	</div> <!-- END OF COLL-8 -->
 		<div class="col-sm-2 col-md-2 col-lg-2">ad</div>
-		</div>
-	</div>
+	</div> <!-- END OF MIDDLE ROW -->
+		
 	<div class="row">		
 	<footer class="navbar-fixed-bottom">
 		<nav class="navbar navbar-inverse">
@@ -133,11 +87,5 @@ $dbh = null;
 		</nav> 
 	</footer>
 	</div>
-	
-	<script language="javascript" type="text/javascript">
-		//$('.results').html('power rangers');
-	
-		$('.results').html($tack);
-					</script>
 </body>
 </html>

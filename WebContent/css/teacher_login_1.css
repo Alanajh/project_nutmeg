@@ -1,0 +1,18 @@
+#bulls{ 
+	border-left: 2px solid lightgray;
+	width: 100%;
+	display: block; 
+	overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;
+}
+#bulls th{
+	padding-left: 15px;
+}
+#bulls td{
+	padding: 5px;
+	padding-left: 15px;
+}
+span{
+	align:right;
+}
+
