@@ -1,39 +1,1 @@
-table_name,alternates,title,sql_query,type,location,subject ,genre,dewey,grade,age,endpoint,documentation,description
-test_statesCapitals,,The U.S. States and Capitals,,2,phpMyAdmin,geography,,910,,,,,This test contains the abbreviated states and their capital cities.
-test_peridoc_table_elements,,The Elements of the Periodic Table,,2,phpMyAdmin,science,chemistry,540,"10th, sophmore, all","16, all",,,This test contains the elements on the periodic table and their names. 
-test_art,,African American Fine Artists,,,api,art,fine_art,700,all,all,https://api.artsy.net/api,https://developers.artsy.net/docs,"This is a multiple choice test that has shows an image, then you select who the artist is that created that image. There is a higher  level choose which genre, country the piece is from."
-test_natural_history,,Animal Classifications - Vertebrates,,,api,science,natural_history,590,,,http://data.nhm.ac.uk/api/3,http://docs.ckan.org/en/latest/api/index.html,"This test will display the name and image(optional) of an animal and you will identify that animal as a mammal, bird, fish, reptile or amphibian"
-test_european,,,,,api,history,,,,,http://europeana.eu/api/v2/search.json,http://labs.europeana.eu/api/,
-test_spelling,,,,,api,linguistics,english,400,all,all,,http://www.macmillandictionary.com/us/tools/aboutapi.html,This test will speak a word and the user will fill in the spaces with the correct spelling. This test uses audio.
-test_spelling_I,,,,,api,linguistics,english,400,all,all,http://www.dictionaryapi.com/api/v1/references/collegiate/xml/hypocrite?key=[YOUR KEY GOES HERE,http://dictionaryapi.com/,This test will speak a word and the user will fill in the spaces with the correct spelling. This test uses audio.
-test_business_history,,Famous Companies That Changed Their Names,,2,phpMyAdmin,business,business_history,,"college_freshman, all","15, all",,,This test contains the original business name of well-known companies and the user will select the correct name that the company is currently known as.
-test_us_space_exploration_1940-1960,,U.S. Space Exploration between 1940 - 1960,,,,"science, history",science_history,520,,,,,
-test_olympic_track_history,,Olympic International Track History,,,,sports,"track, running",790,,,,,
-test_olympic_*,"soccer, football, futbol_history",Olympic International Soccer History,,,,sports,"soccer, football, futbol, calcio",790,,,,,
-test_ancient_world_empires_*,"country, region, world, continental",The Ancient World Empires - ['x'] Version,,,,history,governments,930,,,,,This test will ask you questions pertaining to 
-test_battles_wwii_001,"ALL, navy, marines, sea, land airforce, air",Battles of World War II,,,,history,world_war,900,,,,,
-test_constitutional_law_001,sectional of the constitution,Constitutional Law,,,,law,constitutional_law,340,,,,,
-test_linear_equations,"people, equations, process",,,,,,,520,,,,,
-test_ethical_hacking,,,,,,,,000
-test_java,,,,,,,,000
-test_web_development,"php, javascript, html, css",,,,,,,000
-test_sql,,,,,,,,000
-test_manned_missions_to_space,,,,,,,,520
-test_dotnet,,,,,,,,000
-test_actors_vaudeville,,Famous Actors Who Started in Vaudeville,,,,,,
-test_dog_breeds,,,,,,,,
-test_art_001,"ALL, renissance, contemporary, dadaism, pointalism, chinese, italian, african, etc. *: 1, 2, 3…",The History of Renaissance Art - Level *,,,,,,
-test_,,,,,,,,
-test_,,,,,,,,
-test_,,,,,,,,
-test_,,,,,,,,
-test_,,,,,,,,
-test_,,,,,,,,
-test_,,,,,,,,
-test_
-test_
-test_
-test_
-test_
-test_
-test_
+table_name,alternates,title,sql_query,type,location,subject ,genre,dewey,grade,age,endpoint,documentation,descriptiontest_statesCapitals,,The U.S. States and Capitals,,2,phpMyAdmin,geography,,910,,,,,This test contains the abbreviated states and their capital cities.test_peridoc_table_elements,,The Elements of the Periodic Table,,2,phpMyAdmin,science,chemistry,540,"10th, sophmore, all","16, all",,,This test contains the elements on the periodic table and their names. test_art,,African American Fine Artists,,2,api,art,fine_art,700,all,all,https://api.artsy.net/api,https://developers.artsy.net/docs,"This is a multiple choice test that has shows an image, then you select who the artist is that created that image. There is a higher  level choose which genre, country the piece is from."test_natural_history,,Animal Classifications - Vertebrates,,2,api,science,natural_history,590,,,http://data.nhm.ac.uk/api/3,http://docs.ckan.org/en/latest/api/index.html,"This test will display the name and image(optional) of an animal and you will identify that animal as a mammal, bird, fish, reptile or amphibian"test_european,,European Monarchys,,"2,4",api,history,,,,,http://europeana.eu/api/v2/search.json,http://labs.europeana.eu/api/,test_spelling,,Animals of the Serengeti,,2,api,linguistics,"engglish, zoology",400,all,all,,http://www.macmillandictionary.com/us/tools/aboutapi.html,This test will speak a word and the user will fill in the spaces with the correct spelling. This test uses audio.test_spelling_I,,Cities of the World,,2,api,linguistics,"english, zoology","400, 910",all,all,http://www.dictionaryapi.com/api/v1/references/collegiate/xml/hypocrite?key=[YOUR KEY GOES HERE,http://dictionaryapi.com/,This test will speak a word and the user will fill in the spaces with the correct spelling. This test uses audio.test_business_history,,Famous Companies That Changed Their Names,,4,phpMyAdmin,business,business_history,,"college_freshman, all","15, all",,,This test contains the original business name of well-known companies and the user will select the correct name that the company is currently known as.test_us_space_exploration_1940-1960,,U.S. Space Exploration between 1940 - 1960,,,,"science, history",science_history,520,,,,,test_olympic_track_history,,Olympic International Track History,,,,sports,"track, running",790,,,,,test_olympic_*,"soccer, football, futbol_history",Olympic International Soccer History,,,,sports,"soccer, football, futbol, calcio",790,,,,,test_ancient_world_empires_*,"country, region, world, continental",The Ancient World Empires - ['x'] Version,,,,history,governments,930,,,,,This test will ask you questions pertaining to test_battles_wwii_001,"ALL, navy, marines, sea, land airforce, air",Battles of World War II,,,,history,world_war,900,,,,,test_constitutional_law_001,sectional of the constitution,Constitutional Law,,,,law,constitutional_law,340,,,,,test_linear_equations,"people, equations, process",,,,,,,520,,,,,test_ethical_hacking,,,,,,,,0test_java,,,,,,,,0test_web_development,"php, javascript, html, css",,,,,,,0test_sql,,,,,,,,0test_manned_missions_to_space,,,,,,,,520test_dotnet,,,,,,,,0test_actors_vaudeville,,Famous Actors Who Started in Vaudeville,,,,,,test_dog_breeds,,,,,,,,test_art_001,"ALL, renissance, contemporary, dadaism, pointalism, chinese, italian, african, etc. *: 1, 2, 3…",The History of Renaissance Art - Level *,,,,,,test_,,,,,,,,test_,,,,,,,,test_,,,,,,,,test_,,,,,,,,test_,,,,,,,,test_,,,,,,,,test_,,,,,,,,test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_test_

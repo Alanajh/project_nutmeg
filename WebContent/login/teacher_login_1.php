@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +21,8 @@
 	
 	<!--  External CSS -->
 	<link rel="stylesheet" href="../css/teacher_login_1.css">
+
+</script>
 </head>	
 <body class="container-fluid">
 
@@ -35,8 +40,9 @@
 	}catch(PDOException $e){
 		die();
 	}
-		$sql = "SELECT table_name FROM main_test_listing WHERE NULLIF(table_name, ' ')IS NOT NULL ORDER BY table_name"; 
-	    $result = $dbh->query($sql);			
+		$sql = "SELECT type, title FROM main_test_listing WHERE NULLIF(title, ' ')IS NOT NULL ORDER BY title"; 
+	    $result = $dbh->query($sql);
+				
 ?>
 
 	<div class="row">
@@ -62,13 +68,18 @@
 			<hr style="height:5px; border:none; color: lightgray; background-color: lightgray;" />
 			<div class="row">
 			<?php
-					echo "<table id='bulls'><tr><th>Test</th><th>Delete</th></tr>";
+				$i = 0;
+				echo "<table id='bulls'><tr><th>Test</th><th>Delete</th></tr>";
+
 				foreach($dbh->query($sql) as $row){
-					echo "<tr><td><a href='example.php'>". $row['title']. "</a></td>";
-					echo "<td><a href=''><span class='glyphicon glyphicon-trash'></span></a></td>";
+					$i++;
+					echo "<tr><td><a href='../example.php'>". $row['title']. "</a></td>";
+					echo "<td><a href='../example.php?title=$row[title]&value=$row[type]'><span class='glyphicon glyphicon-trash'></span></a></td>";
+
 					echo "</tr>";
 				}
 					echo "</table>";
+
 				$dbh = null;	
 			?>
 		</div> <!-- END OF TABLE ROW -->

@@ -1,4 +1,12 @@
-var myArray    = new Array();
+function grab(){
+	var sel = document.getElementById("table_name");
+	var value = sel.options[sel.selectedIndex].value; // or sel.value;
+	var text = sel.options[sel.selectedIndex].text;
+	
+	alert("usa");
+}
+/*		
+	   var myArray    = new Array();
 	    myArray[0] = 1;
 	    myArray[1] = 2.218;
 	    myArray[2] = 33;
@@ -23,8 +31,5 @@ var myArray    = new Array();
 	    myTable+="<td style='width: 100px; text-align: right;'>" + myArray[i] + "</td></tr>";
 	  }  
 	   myTable+="</table>";
-
+*/
 	   //document.write( myTable);
-
-		
-		
