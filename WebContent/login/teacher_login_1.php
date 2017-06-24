@@ -28,7 +28,7 @@
 
 <!-- SQL -->
 <?php
-
+	
 	$server = "localhost";
 	$db = "nutmeg";
 	$user = "root";
@@ -40,7 +40,7 @@
 	}catch(PDOException $e){
 		die();
 	}
-		$sql = "SELECT type, title FROM main_test_listing WHERE NULLIF(title, ' ')IS NOT NULL ORDER BY title"; 
+		$sql = "SELECT type, title, subject, genre, dewey FROM main_test_listing WHERE NULLIF(title, ' ')IS NOT NULL ORDER BY title"; 
 	    $result = $dbh->query($sql);
 				
 ?>
@@ -72,9 +72,8 @@
 				echo "<table id='bulls'><tr><th>Test</th><th>Delete</th></tr>";
 
 				foreach($dbh->query($sql) as $row){
-					$i++;
-					echo "<tr><td><a href='../example.php'>". $row['title']. "</a></td>";
-					echo "<td><a href='../example.php?title=$row[title]&value=$row[type]'><span class='glyphicon glyphicon-trash'></span></a></td>";
+					echo "<tr><td><a href='../example.php?title=$row[title]&value=$row[type]&subject=$row[subject]&genre=$row[genre]&dewey=$row[dewey]'>". $row['title']. "</a></td>";
+					echo "<td><a href='../example.php?title=$row[title]&value=$row[type]&subject=$row[subject]&genre=$row[genre]&dewey=$row[dewey]'><span class='glyphicon glyphicon-trash'></span></a></td>";
 
 					echo "</tr>";
 				}

@@ -26,7 +26,7 @@
 			
 			<div class="col-sm-6 col-md-6 col-lg-6"  style="text-align: center; font-family: 'Modern No. 20'; font-size: 50px;">
 				<h1>NUTMEG</h1>
-				<h3>test</h3>
+				<h3><?php echo '<p/>', $title, "<br/>";?></h3>
 			</div>
 			
 			<div class="col-sm-3 col-md-3 col-lg-3">
@@ -46,8 +46,8 @@
 				<!-- TEST SUBJECT & TITLE -->
 				<div style="padding-bottom: 5%;">
 					<br>
-					<p>Subject: History</p>
-					<p>Title: World Empires</p>
+					<p><?php echo $subject, "<br/>";?> </p>
+					<p><?php echo $genre, "<br/>";?> </p>
 				</div>
 				
 				<!-- TEST QUESTIONS -->
